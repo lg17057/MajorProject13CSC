@@ -5,8 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello</title>
+    <link rel= "stylesheet" href= "{{ url_for('static', filename='/styles.css') }}">
 </head>
+
+<style>
+    h1 {
+        font-size: 100px;
+    }
+
+    
+</style>
+
 <body>
-    <h1>DOES IT WORK</h1>
+    <h1>Rightguide</h1>
+
+    <p>The online forum built by students for students</p>
+
+    <div class="menu">
+        <form action="/list">
+            <button class = "button">Sign Up</button>
+        </form>
+        <form action="/list">
+            <button class = "button">Log In</button>
+        </form>
+    </div>
+
 </body>
+
 </html>
